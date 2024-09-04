@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आई माऊली ग्राफिक्स</title>
+    <meta name="description" content="आई माऊली ग्राफिक्स - फोटोशॉप आणि ग्राफिक डिझाइन मध्ये व्यावसायिक सेवां साठी संपर्क करा.">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        color: #333;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        background: #2C3E50; /* Dark Blue */
+        color: #ECF0F1; /* Light Gray */
+        padding: 10px 0;
+        text-align: center;
+      }
+      nav {
+        background: #34495E; /* Slightly Lighter Blue */
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        margin: 0 15px;
+      }
+      nav ul li a {
+        color: #ECF0F1; /* Light Gray */
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+        cursor: pointer;
+      }
+      nav ul li a:hover {
+        background: #2980B9; /* Blue on Hover */
+        border-radius: 5px;
+      }
+      main {
+        padding: 20px;
+        flex: 1;
+      }
+      section {
+        margin-bottom: 20px;
+        display: none; /* Hide all sections initially */
+      }
+      form label {
+        display: block;
+        margin-top: 10px;
+      }
+      form input, form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #BDC3C7; /* Light Gray Border */
+        border-radius: 5px;
+      }
+      form button {
+        background: #2C3E50; /* Dark Blue */
+        color: #ECF0F1; /* Light Gray */
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      form button:hover {
+        background: #1ABC9C; /* Teal on Hover */
+      }
+      footer {
+        background: #2C3E50; /* Dark Blue */
+        color: #ECF0F1; /* Light Gray */
+        text-align: center;
+        padding: 10px 0;
+        margin-top: auto;
+        position: relative;
+        width: 100%;
+      }
+      @media (max-width: 600px) {
+        nav ul {
+          flex-direction: column;
+          text-align: center;
+        }
+        nav ul li {
+          margin: 10px 0;
+        }
+        main {
+          padding: 10px;
+        }
+        form input, form textarea {
+          width: 100%;
+        }
+      }
+    </style>
+    <script>
+      function showSection(sectionId) {
+        // Hide all sections
+        const sections = document.querySelectorAll('main section');
+        sections.forEach(section => {
+          section.style.display = 'none';
+        });
+
+        // Show the selected section
+        document.getElementById(sectionId).style.display = 'block';
+      }
+      
+      window.onload = function() {
+        // Show the home section by default
+        showSection('home');
+      }
+    </script>
+</head>
+<body>
+<header>
+    <h1>आई माऊली ग्राफिक्स</h1>
+    <nav>
+        <ul>
+            <li><a onclick="showSection('home')">होम</a></li>
+            <li><a onclick="showSection('about')">माझ्याबद्दल</a></li>
+            <li><a onclick="showSection('services')">सेवाहरू</a></li>
+            <li><a onclick="showSection('portfolio')">पोर्टफोलिओ</a></li>
+            <li><a onclick="showSection('gallery')">गॅलरी</a></li>
+            <li><a onclick="showSection('blog')">ब्लॉग</a></li>
+            <li><a onclick="showSection('testimonials')">साक्षात्कार</a></li>
+            <li><a onclick="showSection('contact')">संपर्क</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="home">
+        <h2>होम</h2>
+        <p>Welcome to our graphics business. Explore our services and get in touch with us for your design needs.</p>
+    </section>
+    <section id="about">
+        <h2>माझ्याबद्दल</h2>
+        <p>मी निरज बेटकर, एक व्यावसायिक फोटोशॉप फ्रीलान्सर आहे, ज्याला फोटो एडिटिंग, रिटचिंग व ग्राफिक डिझाइनचा अनुभव आहे.</p>
+        <p>मोबाइल: 8369381856</p>
+    </section>
+    <section id="services">
+        <h2>सेवाहरू</h2>
+        <ul>
+            <li>फोटो एडिटिंग</li>
+            <li>रीटचिंग</li>
+            <li>ग्राफिक डिझाइन</li>
+            <li>वाढदिवस डिझाईन</li>
+            <li>वाढदिवस ग्रुप डिझाईन</li>
+            <li>फेसबुक प्रोफाइल डिझाईन</li>
+            <li>चित्रपट पोस्टर प्रकारच्या डिझाईन</li>
+            <li>सण-उत्सव डिझाईन</li>
+            <li>व्हिजिटिंग कार्ड डिझाईन</li>
+            <li>लोगो डिझाईन</li>
+            <li>कॅलिग्राफी डिझाईन</li>
+            <li>निमंत्रण पत्रिका डिझाईन</li>
+            <li>व्यवसाय मार्केटिंग डिझाईन ब्रोशर्स (Brochure) डिझाईन</li>
+            <li>शॉप बोर्ड डिझाईन</li>
+            <li>हॉटेल मेनू कार्ड डिझाईन</li>
+            <li>इलेक्शन डिझाईन</li>
+        </ul>
+    </section>
+    <section id="portfolio">
+        <h2>पोर्टफोलिओ</h2>
+        <p>Check out some of our previous work and successful projects.</p>
+    </section>
+    <section id="gallery">
+      <h2>गॅलरी</h2>
+      <p>Here you can find images of our recent projects and designs.</p>
+      <div>
+          <!-- Add images here -->
+          <img src="images/image1.jpg" alt="Project Image 1" style="width:100%;max-width:300px;margin:10px;">
+          <img src="images/image2.jpg" alt="Project Image 2" style="width:100%;max-width:300px;margin:10px;">
+          <img src="images/image3.jpg" alt="Project Image 3" style="width:100%;max-width:300px;margin:10px;">
+          <img src="images/image4.jpg" alt="Project Image 4" style="width:100%;max-width:300px;margin:10px;">
+          <img src="images/image6.jpg" alt="Project Image 5" style="width:100%;max-width:300px;margin:10px;">
+          <img src="images/image6.jpg" alt="Project Image 6" style="width:100%;max-width:300px;margin:10px;">
+          <img src="images/image7.jpg" alt="Project Image 7" style="width:100%;max-width:300px;margin:10px;">
+          <img src="images/image8.jpg" alt="Project Image 8" style="width:100%;max-width:300px;margin:10px;">
+          <img src="images/image9.jpg" alt="Project Image 9" style="width:100%;max-width:300px;margin:10px;">
+          <img src="images/image10.jpg" alt="Project Image 10" style="width:100%;max-width:300px;margin:10px;">
+      </div>
+  </section>
+    <section id="blog">
+        <h2>ब्लॉग</h2>
+        <p>Read our latest articles and tips on graphic design and photography.</p>
+    </section>
+    <section id="testimonials">
+        <h2>साक्षात्कार</h2>
+        <p>Hear from our satisfied clients and their experiences with our services.</p>
+    </section>
+    <section id="contact">
+        <h2>संपर्क</h2>
+        <p>आपल्याला माझ्या सेवांमध्ये रस असल्यास, कृपया खालील फॉर्म भरा.</p>
+        <form id="contact-form">
+            <label for="name">नाव:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">ईमेल:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">संदेश:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">पाठवा</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 आई माऊली ग्राफिक्स. सर्व हक्क राखीव.</p>
+    </footer>
+</main>
+</body>
+</html>
